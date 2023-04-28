@@ -22,6 +22,17 @@ commendations:
     sprite: 5
     criteria:
       totalStatGain: [125, 150, 175, 200, 233, 266, 300, 333, 366, 400]
+  - type: STR_MEDAL_COMMENDATED_NAME #commended_commendation
+    description: STR_MEDAL_COMMENDATED_UFOPEDIA
+    soldierBonusTypes: [STR_MEDAL_COMMENDATED]
+    sprite: 2
+    criteria:
+      killsWithCriteriaCareer: [1]
+    killCriteria:
+      -
+         - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+      -
+         - [1, ["STATUS_UNCONSCIOUS", "FACTION_HOSTILE"]]
   - type: STR_MEDAL_CARREER_SCORE_NAME #Total Score
     description: STR_MEDAL_CARREER_SCORE_UFOPEDIA
     soldierBonusTypes: [STR_MEDAL_COMMENDATED, STR_MEDAL_COMMENDATED, STR_MEDAL_COMMENDATED, STR_MEDAL_CARREER_SCORE_4, STR_MEDAL_CARREER_SCORE_4, STR_MEDAL_CARREER_SCORE_4, STR_MEDAL_CARREER_SCORE_7, STR_MEDAL_CARREER_SCORE_7, STR_MEDAL_CARREER_SCORE_7, STR_MEDAL_CARREER_SCORE_10]
